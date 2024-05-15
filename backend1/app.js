@@ -18,9 +18,13 @@ app.use("/api/admin",registerRouter);
 const loginUser = require("./routes/loginRoutes");
 app.use("/api/admin",loginUser);
 
+
 const facultyRouter = require("./routes/facultyRoutes");
 app.use("/api/admin",facultyRouter)
 
+
+const studentRegisterRouter = require("./routes/studentRegisterRoutes");
+app.use("/api/admin",studentRegisterRouter);
 
 
 
